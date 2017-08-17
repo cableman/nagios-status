@@ -60,7 +60,7 @@ function dashCounters($errors, $warings = array(), $disabled = array(), $ok = ar
 	echo '<div class="center status-counters">';
   echo '<div class="status-counter down">', $error_count, ' - Down</div>';
   echo '<div class="status-counter warn">', $warn_count, ' - Warning</div>';
-  echo '<div class="status-counter up">', $ok_count, ' - UP/OK</div>';
+  echo '<div class="status-counter ok">', $ok_count, ' - UP/OK</div>';
   echo '<div class="status-counter disabled">', $dis_count, ' - Disabled</div>';
 	echo '</div>';
 }
