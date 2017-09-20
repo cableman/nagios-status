@@ -32,11 +32,11 @@ function showNotifications($file) {
 		}
 	}
 
-	dashCounters($errors, $warings, $disabled, $ok);
+	dashCounters($errors, $warnings, $disabled, $ok);
 	dashTabledisplay($errors, $warnings, $disabled);
 }
 
-function dashCounters($errors, $warings = array(), $disabled = array(), $ok = array()) {
+function dashCounters($errors, $warnings = array(), $disabled = array(), $ok = array()) {
 	$ok_count = 0;
 	foreach ($ok as $value) {
 		$ok_count += count($value);
@@ -65,7 +65,7 @@ function dashCounters($errors, $warings = array(), $disabled = array(), $ok = ar
 	echo '</div>';
 }
 
-function dashTabledisplay($errors, $warings = array(), $disabled = array(), $ok = array()) {
+function dashTabledisplay($errors, $warnings = array(), $disabled = array(), $ok = array()) {
 	foreach ($errors as $host => $services) {
 		foreach ($services as $service) {
 			echo '<tr bgcolor="red">';
@@ -84,7 +84,7 @@ function dashTabledisplay($errors, $warings = array(), $disabled = array(), $ok 
 		}
 	}
 
-	foreach ($warings as $host => $services) {
+	foreach ($warnings as $host => $services) {
 		foreach ($services as $service) {
 			echo '<tr bgcolor="yellow">';
       echo '<td>', date("d-m-Y H:i:s", $service['last_check']), '</td>';
