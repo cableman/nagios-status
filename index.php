@@ -1,6 +1,6 @@
 <?php
   require_once('utils.inc');
-  $file = 'status.dat';
+  $file = 'data/status.dat';
 	$refreshvalue = 30;
 ?>
 
