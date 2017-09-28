@@ -1,37 +1,109 @@
 body {
-  margin: 0px;
-  font-family: sans-serif;
-  font-size: 22pt;
-  color: white;
-  background: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: rgb(0, 47, 47);
 }
 
 h1 {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 table {
-	color: black;
+	font-size: 12pt;
 }
 
-.countdown {
-  font-weight: bold;
-  text-align: center
+thead {
+	background: #00a485;
+	color: #fff;
 }
 
-.center {
-  text-align: center;
+/* Variables */
+.text-info {
+	color: #00a485!important;
 }
 
-.status-counters {
-	display: inline-block;
-	font-size: 18pt;
+.timer--wrapper {
+	display:flex;
+	justify-content: flex-end;
+	background: #00a485;
+}
+
+.timer {
+	background: white;
+	height:4px;
+}
+
+.logo {
+	box-sizing: border-box;
+	padding: 12px 36px;
 	width: 100%;
 }
 
-.status-counter {
-	display: inline-block;
-	margin: 30px 10px 10px 10px;
+.header {
+	padding: 12px 36px;
+	text-align: center;
+}
+
+
+.calendar--wrapper {
+	display: flex;
+	justify-content: flex-end;
+	padding: 12px 36px;
+}
+
+.calendar {
+	border: 1px solid #0c0c0c;
+	font-weight: bold;
+	text-align: center;
+	width: min-content;
+}
+
+.month {
+	background: #00a485;
+	color: #fff;
+	padding: 2px 5px;
+}
+
+.date {
+	padding: 2px 5px;
+	font-size: 1.7em;
+}
+
+.year {
+	padding: 2px 5px;
+}
+
+
+.critical {
+	padding: 36px;
+}
+
+.notifications {
+	padding: 36px;
+}
+
+.footer {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.footer:before  {
+	content: '';
+	width:100%;
+	display: block;
+	height:60px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&0+1,1+80 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 1%, rgba(255,255,255,.5) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 1%,rgba(255,255,255,.5) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 1%,rgba(255,255,255,.5) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.footer--inner {
+
+	background: white;
+	padding: 36px;
 }
 
 .down {
