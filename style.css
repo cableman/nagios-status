@@ -17,6 +17,14 @@ thead {
 	color: #fff;
 }
 
+img {
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+}
+
 /* Variables */
 .text-info {
 	color: #00a485!important;
@@ -101,7 +109,6 @@ thead {
 }
 
 .footer--inner {
-
 	background: white;
 	padding: 36px;
 }
