@@ -17,7 +17,7 @@ thead {
 	color: #fff;
 }
 
-img {
+body > img {
 	max-width: 100%;
 	max-height: 100%;
 	position: absolute;
