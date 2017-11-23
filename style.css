@@ -23,9 +23,11 @@ body > img {
 	position: absolute;
 	z-index: -1;
 	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
-/* Variables */
 .text-info {
 	color: #00a485!important;
 }
@@ -60,7 +62,7 @@ body > img {
 }
 
 .calendar {
-	border: 1px solid #0c0c0c;
+	border: 1px solid #0f0f0f;
 	font-weight: bold;
 	text-align: center;
 	width: min-content;

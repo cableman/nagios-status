@@ -1,10 +1,21 @@
 <?php
   require_once('utils.inc');
+
+  // Xmas in December.
+  $xmas = (date('m') == 12) ? TRUE : FALSE;
+
   // Data
   $file = 'data/status.dat';
 
   // Image on no errors.
   $okImage = 'images/thumbs.jpg';
+
+  // Check for xmas
+  if ($xmas) {
+    // Xmas image
+    $xmas_image = 'xmas-pack/santa_thumbs.png';
+    $okImage = $xmas_image;
+  }
 
   // Refresh values
 	$refreshvalue = 60;
@@ -20,7 +31,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="style.css" media="all">
+<?php if ($xmas) : ?><link type="text/css" rel="stylesheet" href="xmas-pack/style-xmas.css" media="all"><?php endif; ?>
 <body>
+  <?php if($xmas){include_once "xmas-pack/snowflakes.php";}?>
   <div class="row no-gutters">
     <div class="col">
       <div class="timer--wrapper">
