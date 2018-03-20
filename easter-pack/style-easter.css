@@ -1,0 +1,19 @@
+thead {
+    background: #FFCA4F
+}
+
+.text-info {
+    color: #FFCA4F!important;
+}
+
+.timer--wrapper {
+    background: #FFCA4F;
+}
+
+.month {
+    background: #FFCA4F;
+}
+
+.easter-egg {
+    display: none;
+}
